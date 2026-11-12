@@ -27,6 +27,7 @@ button:focus-visible,select:focus-visible{outline:3px solid color-mix(in srgb,va
 .sw{width:44px;height:44px;border-radius:50%;padding:0;border:2px solid color-mix(in srgb,var(--ink) 25%,transparent)}.sw.sel{outline:3px solid var(--ink);outline-offset:2px}
 html,body{width:var(--vw,100%)}main{width:var(--vw,100%);max-width:none;margin:0;padding:12px calc(env(safe-area-inset-right,0px) + 18px) calc(env(safe-area-inset-bottom,0px) + 28px) calc(env(safe-area-inset-left,0px) + 18px)}
 .head{text-align:center;padding:2px 0 8px;border-bottom:1px solid color-mix(in srgb,var(--ink) 15%,transparent);margin-bottom:10px}
+.brand{display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:600;letter-spacing:.02em;opacity:.85;margin-bottom:8px}
 .head .ar{font-family:"KFGQPC Hafs","Amiri Quran","Traditional Arabic",serif;font-size:1.5rem;line-height:1.4;direction:rtl}.head small{opacity:.65;font-size:.85rem;display:block;line-height:1.3}.head .bis{font-size:1.25rem;margin-top:4px}
 .t{direction:rtl;text-align:justify;font-family:"KFGQPC Hafs","Amiri Quran","Traditional Arabic",serif;font-size:var(--fs);line-height:2.3;margin:0}
 .v{border-radius:8px;cursor:pointer}.t.tl{direction:ltr;text-align:start}.tl .vb{padding:12px 6px;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}.tl .va{direction:rtl;text-align:right}.tl .vt{font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:max(15px,calc(var(--fs)*.5));line-height:1.55;opacity:.88;margin-top:6px}.v.mark{background:#fbeec2;color:#111}.vn{font-style:normal;font-size:.8em;margin:0 .25em;opacity:.7}
@@ -63,7 +64,7 @@ html,body{width:var(--vw,100%)}main{width:var(--vw,100%);max-width:none;margin:0
   <div class="pal" id="palbox"></div>
 </div>
 <main>
-  <div class="head"><div class="ar" id="har"></div><small id="hru"></small><div class="ar bis" id="bis"></div></div>
+  <div class="head"><div class="brand"><svg viewBox="0 0 100 100" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="12" width="68" height="76" rx="6"/><path d="M16 12v76"/><path d="M58 30a22 22 0 1 0 0 40a18 18 0 1 1 0-40z" fill="currentColor" stroke="none"/><path d="M70 40l2.2 4.6 5 .5-3.8 3.3 1.1 4.9-4.5-2.6-4.5 2.6 1.1-4.9-3.8-3.3 5-.5z" fill="currentColor" stroke="none"/><path d="M32 70h36" stroke-width="4"/></svg><span>Коран</span></div><div class="ar" id="har"></div><small id="hru"></small><div class="ar bis" id="bis"></div></div>
   <div class="t" id="text" lang="ar"></div>
   <div class="nav"><button id="prev">‹ Назад</button><button id="next">Далее ›</button></div>
   <p class="hint">Размер шрифта: сведите или разведите два пальца. Кнопка RU включает перевод под каждым аятом. Нажмите на аят — он станет закладкой, при следующем открытии страница вернётся к нему.<br>Текст и шрифт: Комплекс имени короля Фахда (KFGQPC), риваят Хафс. Перевод: Эльмир Кулиев (Tanzil.net).</p>
