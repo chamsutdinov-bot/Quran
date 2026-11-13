@@ -44,7 +44,7 @@ html,body{width:100%}main{width:100%;max-width:none;margin:0;padding:12px calc(e
 #alrt .amoon{filter:drop-shadow(0 0 24px #fff8);margin-bottom:6px}#alrt .aart{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;opacity:.38;pointer-events:none}
 .alset{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0}
 #toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#111c;color:#fff;padding:10px 16px;border-radius:14px;display:none;z-index:9;max-width:90%}
-@media (orientation:landscape){main{max-width:none;padding-left:calc(env(safe-area-inset-left,0px) + 24px);padding-right:24px}.t{line-height:2}}
+@media (orientation:portrait){.t{margin-right:calc(-1 * env(safe-area-inset-right,0px))}} @media (orientation:landscape){main{max-width:none;padding-left:calc(env(safe-area-inset-left,0px) + 24px);padding-right:24px}.t{line-height:2}}
 .ic{width:22px;height:22px}
 </style>
 </head>
