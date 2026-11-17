@@ -213,6 +213,7 @@ document.addEventListener("touchend",e=>{if(e.touches.length<2)pd=0;if(!e.touche
 ["gesturestart","gesturechange"].forEach(n=>document.addEventListener(n,e=>e.preventDefault()));
 render();
 const t0=Date.now();let touched=false;document.addEventListener("touchstart",()=>{touched=true},{passive:true,once:true});restorePos();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{if(!touched&&Date.now()-t0<2500)restorePos()});
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 </script>
 </body>
 </html>
